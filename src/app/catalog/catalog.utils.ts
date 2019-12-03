@@ -1,5 +1,5 @@
 export const saveText = (text: string, filename: string) => {
-  var a = document.createElement('a');
+  const a = document.createElement('a');
   a.setAttribute(
     'href',
     'data:text/plain;charset=utf-u,' + encodeURIComponent(text)
@@ -56,6 +56,7 @@ export const catalogItems = [
       'assets/img/promotion/promotion-30.jpg',
       'assets/img/promotion/promotion-24.jpg'
     ],
+    label: 'promotion',
     catalog: 'promotion',
     name: 'promotion'
   },
@@ -68,6 +69,7 @@ export const catalogItems = [
       'assets/img/huthucphammatsu/huthucphammatsu-5.jpg',
       'assets/img/huthucphammatsu/huthucphammatsu-4.jpg'
     ],
+    label: 'Pôt alimentaire MATSU',
     catalog: 'huthucphammatsu',
     name: 'huthucphammatsu'
   },
@@ -98,6 +100,7 @@ export const catalogItems = [
       'assets/img/binhchainuocsuoi/binhchainuocsuoi-24.jpg',
       'assets/img/binhchainuocsuoi/binhchainuocsuoi-18.jpg'
     ],
+    label: 'Bouteille et bonbonne d\'eau minérale',
     catalog: 'binhchainuocsuoi',
     name: 'binhchainuocsuoi'
   },
@@ -124,6 +127,7 @@ export const catalogItems = [
       'assets/img/hopthucphampp/hopthucphampp-17.jpg',
       'assets/img/hopthucphampp/hopthucphampp-16.jpg'
     ],
+    label: 'Boîte alimentaire',
     catalog: 'hopthucphampp',
     name: 'hopthucphampp'
   },
@@ -142,6 +146,7 @@ export const catalogItems = [
       'assets/img/kyra-pisa/kyra-pisa-11.jpg',
       'assets/img/kyra-pisa/kyra-pisa-12.jpg'
     ],
+    label: 'KYRA-PISA',
     catalog: 'kyra-pisa',
     name: 'kyra-pisa'
   },
@@ -184,6 +189,7 @@ export const catalogItems = [
       'assets/img/noithat/noithat-12.jpg',
       'assets/img/noithat/noithat-13.jpg'
     ],
+    label: 'Ameublements',
     catalog: 'noithat',
     name: 'noithat'
   },
@@ -220,6 +226,7 @@ export const catalogItems = [
       'assets/img/congnghiep/congnghiep-24.jpg',
       'assets/img/congnghiep/congnghiep-18.jpg'
     ],
+    label: 'Produits industriels',
     catalog: 'congnghiep',
     name: 'congnghiep'
   },
@@ -256,6 +263,7 @@ export const catalogItems = [
       'assets/img/hupet/hupet-3.jpg',
       'assets/img/hupet/hupet-1.jpg'
     ],
+    label: 'Pôts',
     catalog: 'hupet',
     name: 'hupet'
   },
@@ -278,6 +286,7 @@ export const catalogItems = [
       'assets/img/line/line-8.jpg',
       'assets/img/line/line-9.jpg'
     ],
+    label: 'Chaise Line',
     catalog: 'line',
     name: 'line'
   },
@@ -370,6 +379,7 @@ export const catalogItems = [
       'assets/img/giadung/giadung-33.jpg',
       'assets/img/giadung/giadung-27.jpg'
     ],
+    label: 'Appareils ménagers',
     catalog: 'giadung',
     name: 'giadung'
   },
@@ -392,6 +402,7 @@ export const catalogItems = [
       'assets/img/hopps/hopps-2.jpg',
       'assets/img/hopps/hopps-1.jpg'
     ],
+    label: 'Boîtes',
     catalog: 'hopps',
     name: 'hopps'
   },
@@ -414,6 +425,7 @@ export const catalogItems = [
       'assets/img/bohopgaiquaithotron/bohopgaiquaithotron-7.jpg',
       'assets/img/bohopgaiquaithotron/bohopgaiquaithotron-6.jpg'
     ],
+    label: 'Boîtes et Pôts',
     catalog: 'bohopgaiquaithotron',
     name: 'bohopgaiquaithotron'
   }
