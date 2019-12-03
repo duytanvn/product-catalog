@@ -47,14 +47,21 @@ export class CatalogListComponent implements OnInit {
 
   ngOnInit() {
     this.catalogData = catalogData.map(catalogItem => {
-      catalogItem.products.map(product => {
-        const sizeField = product.descriptionFieldList.find(field => field.name === 'size')
-        product.descriptions = product.descriptions.filter(des => des.code !== 'No 120' || des.label !== 'Product No 120')
-        sizeField.displayed = false
-      })
+      for (let i = 0; i < catalogItem.products.length; i++) {
+        const product = catalogItem.products[i]
+        const sizeField = product.descriptionFieldList.find((field: any) => field.name === 'size')
+        if (sizeField) sizeField.displayed = false
+
+        const newDescriptions: any[] = []
+        for (let j = 0; j < product.descriptions.length; j++) {
+          const des = product.descriptions[j]
+          if (des.code !== 'No 120' || des.label !== 'Product No 120') newDescriptions.push(des)
+        }
+        product.descriptions = newDescriptions
+      }
       return catalogItem
     })
-    
+
     this.catalogItems = this.catalogData
 
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
