@@ -4,7 +4,7 @@
       <div>
         <div [innerHtml]="currentProduct.richTextDescription"></div>
         <div>
-          <table class="table table-borderless table-hover">
+          <table class="table table-borderless table-hover descriptTable">
             <thead>
               <tr *ngIf="currentProduct.descriptions.length > 0">
                 <th scope="col" *ngFor="let col of currentProduct?.descriptionFieldList" [hidden]="!col.displayed">

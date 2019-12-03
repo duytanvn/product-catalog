@@ -18,12 +18,21 @@ export class CatalogListComponent implements OnInit {
   public catalogItems: any[] = []
   public currentCatalogItem: any
   public currentProduct: any
+  public catalogData: any[] = []
 
   @ViewChild('carousel', { static: false }) carousel: NgbCarousel;
 
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.catalogData = catalogData.map(catalogItem => {
+      catalogItem.products.map(product => {
+        const sizeField = product.descriptionFieldList.find(field => field.name === 'size')
+        product.descriptions = product.descriptions.filter(des => des.code !== 'No 120' || des.label !== 'Product No 120')
+        sizeField.displayed = false
+      })
+      return catalogItem
+    })
     this.catalogItems = catalogData
 
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
