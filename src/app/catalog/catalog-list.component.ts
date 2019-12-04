@@ -49,15 +49,22 @@ export class CatalogListComponent implements OnInit {
     this.catalogData = catalogData.map(catalogItem => {
       for (let i = 0; i < catalogItem.products.length; i++) {
         const product = catalogItem.products[i]
-        const sizeField = product.descriptionFieldList.find((field: any) => field.name === 'size')
-        if (sizeField) sizeField.displayed = false
+        
 
         const newDescriptions: any[] = []
         for (let j = 0; j < product.descriptions.length; j++) {
           const des = product.descriptions[j]
           if (des.code !== 'No 120' || des.label !== 'Product No 120') newDescriptions.push(des)
         }
-        product.descriptions = newDescriptions
+        product.descriptions = <any[]>newDescriptions
+
+        const sizeDescriptions = product.descriptions.filter(des => des['size'] && des['size'] !== '10x20x30 cm')
+        const volumeDescriptions = product.descriptions.filter(des => des['volume'] && des['volume'] !== '1000ml')
+        const sizeField = product.descriptionFieldList.find((field: any) => field.name === 'size')
+        const volumeField = product.descriptionFieldList.find((field: any) => field.name === 'volume')
+        if (sizeField) sizeField.displayed = sizeDescriptions.length > 0
+        if (volumeField) volumeField.displayed = volumeDescriptions.length > 0
+
       }
       return catalogItem
     })
