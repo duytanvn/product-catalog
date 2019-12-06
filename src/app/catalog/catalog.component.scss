@@ -29,6 +29,19 @@
   justify-content: center;
   height: calc(100vh - 76px);
   flex-direction: column;
+  position: relative !important;
+}
+
+.product-image {
+  flex: 60%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: calc(100vh - 76px);
+  position: relative !important;
 }
 
 .product-description {
@@ -81,3 +94,17 @@
 
 table.descriptTable tr td { font-size: 14px; }
 table.descriptTable td { padding: 0.25em; }
+
+.img-magnifier-container {
+  position:relative;
+}
+
+::ng-deep .img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  // border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 200px;
+  height: 200px;
+}

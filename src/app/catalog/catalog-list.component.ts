@@ -80,5 +80,5 @@ export class CatalogListComponent implements OnInit {
         this.currentProduct = this.currentCatalogItem.products[0];
       }
     });
-   }
+  }
 }

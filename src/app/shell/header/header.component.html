@@ -15,12 +15,14 @@
         <li class="nav-item" ngbDropdown>
           <a class="nav-link text-uppercase active" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown1"
             role="button">
-            {{ currentCatalogItem.label }}
+            {{ currentCatalogItem?.label || "Menu" }}
           </a>
           <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu dropdown-menu-right">
             <a ngbDropdownItem (click)="onChangeCatalogItem(item)"
               [ngClass]="item === currentCatalogItem ? 'bg--primary' : null"
               *ngFor="let item of catalogItems">{{ item.label?.toUpperCase() }}</a>
+            <hr style="margin: 0px">
+            <a ngbDropdownItem (click)="onChangeCatalogItem()">MENU</a>
           </div>
         </li>
       </ul>

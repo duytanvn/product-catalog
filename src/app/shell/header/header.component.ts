@@ -27,13 +27,16 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.catalogItems = catalogItems;
-    this.currentCatalogItem = this.catalogItems[0];
-    this.router.navigate([`promotion`], { replaceUrl: true });
+    this.router.navigate([`welcome`], { replaceUrl: true });
   }
 
-  onChangeCatalogItem = (item: any) => {
-    this.currentCatalogItem = item;
-    this.router.navigate([`${item.name}`], { replaceUrl: true });
+  onChangeCatalogItem = (item?: any) => {
+    if (item) {
+      this.currentCatalogItem = item;
+      this.router.navigate([`${item.name}`], { replaceUrl: true });
+      return
+    } 
+    this.router.navigate([`welcome`], { replaceUrl: true });
   };
 
   toggleMenu() {

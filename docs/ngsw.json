@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1575503500442,
+  "timestamp": 1575601792060,
   "index": "/product-catalog/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/product-catalog/favicon.ico",
         "/product-catalog/index.html",
-        "/product-catalog/main-es2015.d77a9975f278f3fdcc4b.js",
-        "/product-catalog/main-es5.3c8ee51d1030fb52474a.js",
+        "/product-catalog/main-es2015.925072b12aecff8cf0e3.js",
+        "/product-catalog/main-es5.eadc90a0fd80ce741408.js",
         "/product-catalog/manifest.json",
         "/product-catalog/polyfills-es2015.28c488d65974135187bd.js",
         "/product-catalog/polyfills-es5.943e22c5fb211aefd9b0.js",
@@ -27,6 +27,7 @@
       "updateMode": "prefetch",
       "urls": [
         "/product-catalog/assets/duytan-icon.png",
+        "/product-catalog/assets/duytan-new-icon.png",
         "/product-catalog/assets/img/binhchainuocsuoi/binhchainuocsuoi-1.jpg",
         "/product-catalog/assets/img/binhchainuocsuoi/binhchainuocsuoi-10.jpg",
         "/product-catalog/assets/img/binhchainuocsuoi/binhchainuocsuoi-11.jpg",
@@ -385,6 +386,7 @@
   "dataGroups": [],
   "hashTable": {
     "/product-catalog/assets/duytan-icon.png": "49a39a653b72defe78a9fb13d604bac247e3bd9c",
+    "/product-catalog/assets/duytan-new-icon.png": "adaf8145b0f68dca150b0e35ff627ff40838a20e",
     "/product-catalog/assets/img/binhchainuocsuoi/binhchainuocsuoi-1.jpg": "74103d2d36e87abacfc77b8782b5360c46e7d8af",
     "/product-catalog/assets/img/binhchainuocsuoi/binhchainuocsuoi-10.jpg": "3d2a837d91f0950882e64933ddb3f62250d0869c",
     "/product-catalog/assets/img/binhchainuocsuoi/binhchainuocsuoi-11.jpg": "e9929c4607553ad2ca445b748da689c6a228e637",
@@ -737,9 +739,9 @@
     "/product-catalog/fa-solid-900.44d537ab79f921fde5a2.woff2": "b2879f9e1d0985a96842bf7f55a2b2cc4c636d04",
     "/product-catalog/fa-solid-900.8e4a6dcc692b3887f9f5.eot": "340ee70e87850176047733192ea8109dd6380082",
     "/product-catalog/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
-    "/product-catalog/index.html": "ba60ba6f296fbad319b13ca7eed9b79de3963122",
-    "/product-catalog/main-es2015.d77a9975f278f3fdcc4b.js": "5d0b7c280305dd48226ed747d5944c3af4b72e81",
-    "/product-catalog/main-es5.3c8ee51d1030fb52474a.js": "869d3b78062baf1284c2198143ed02bb37ac4774",
+    "/product-catalog/index.html": "d4fa6176276ee0272e15287413a0d12eec4141a0",
+    "/product-catalog/main-es2015.925072b12aecff8cf0e3.js": "b1036419a2bfa5c11007673248f73ee7cee22617",
+    "/product-catalog/main-es5.eadc90a0fd80ce741408.js": "97861a5c34a75f38fcdfdb838c3058ae938c9eb0",
     "/product-catalog/manifest.json": "f54ed5c1c5dcee2cedff4fbd6675f7b94922623d",
     "/product-catalog/polyfills-es2015.28c488d65974135187bd.js": "ffe5f8cfa6eae51a7a95e8363b303b0c44ade852",
     "/product-catalog/polyfills-es5.943e22c5fb211aefd9b0.js": "3ea1e29746459f5b3ea1cf720189326d06127910",

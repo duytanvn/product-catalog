@@ -4,6 +4,7 @@ import { Shell } from '@app/shell/shell.service';
 import { CatalogComponent } from './catalog.component';
 import { extract } from '@app/core';
 import { CatalogListComponent } from './catalog-list.component';
+import { WelcomeComponent } from './welcome.component';
 
 const routes: Routes = [
   Shell.childRoutes([
@@ -20,8 +21,13 @@ const routes: Routes = [
     // },
     {
       path: '',
-      redirectTo: '/promotion',
+      redirectTo: '/welcome',
       pathMatch: 'full'
+    },
+    {
+      path: 'welcome',
+      component: WelcomeComponent,
+      data: { title: extract('Welcome') }
     },
     {
       path: ':catalogName',
